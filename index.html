@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>الإبداع والفن | أعمال الحديد</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Tahoma,Arial;background:#101010;color:#fff;line-height:1.8}
+header{background:#090909;padding:18px 7%;display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid #b99448}
+.logo{font-size:24px;color:#d6b568;font-weight:bold}
+nav a{color:white;text-decoration:none;margin:0 9px;font-size:14px}
+.hero{min-height:580px;background:linear-gradient(90deg,#000c,#0008),url('https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?w=1600') center/cover;display:flex;align-items:center;padding:60px 8%}
+.hero h1{font-size:46px;color:#e0bd70;margin-bottom:15px}
+.hero p{font-size:19px;color:#eee;max-width:550px}
+.btn{display:inline-block;background:#c6a052;color:#111;padding:12px 27px;margin-top:25px;text-decoration:none;border-radius:5px;font-weight:bold}
+section{padding:65px 7%}
+.heading{text-align:center;color:#d8b76d;font-size:30px;margin-bottom:35px}
+.about{text-align:center;color:#ddd;max-width:800px;margin:auto}
+.services{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px}
+.card{background:#1b1b1b;border:1px solid #554525;border-radius:9px;overflow:hidden;text-align:center;padding-bottom:20px}
+.card img{width:100%;height:190px;object-fit:cover}
+.card h3{color:#dfbd75;margin:15px}
+.card p{color:#ccc;padding:0 12px}
+.gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:15px}
+.gallery img{width:100%;height:220px;object-fit:cover;border-radius:8px}
+.contact{text-align:center;background:#191919}
+.contact p{color:#ddd}
+footer{text-align:center;background:#080808;padding:25px;color:#c5a45e}
+@media(max-width:600px){
+header{flex-direction:column;gap:10px}
+nav a{margin:0 5px;font-size:12px}
+.hero{min-height:480px}
+.hero h1{font-size:32px}
+}
+</style>
+</head>
+<body>
+
+<header>
+<div class="logo">الإبداع والفن</div>
+<nav>
+<a href="#home">الرئيسية</a>
+<a href="#about">من نحن</a>
+<a href="#services">خدماتنا</a>
+<a href="#gallery">أعمالنا</a>
+<a href="#contact">اتصل بنا</a>
+</nav>
+</header>
+
+<div class="hero" id="home">
+<div>
+<h1>الإبداع والفن</h1>
+<p>نحو مستقبل من القوة والجمال والإتقان في عالم الحديد والإنشاءات المعدنية.</p>
+<a href="#services" class="btn">اكتشف خدماتنا</a>
+</div>
+</div>
+
+<section id="about">
+<h2 class="heading">من نحن</h2>
+<div class="about">
+نقدم حلولاً متكاملة في أعمال الحديد والمظلات والهناجر
+والإنشاءات المعدنية، مع الاهتمام بالجودة والتصميم
+والدقة في التنفيذ.
+</div>
+</section>
+
+<section id="services">
+<h2 class="heading">خدماتنا</h2>
+<div class="services">
+<div class="card">
+<img src="https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?w=700">
+<h3>أعمال الحديد</h3>
+<p>تصنيع وتنفيذ مختلف الأعمال الحديدية.</p>
+</div>
+<div class="card">
+<img src="https://images.unsplash.com/photo-1511818966892-d7d671e672a2?w=700">
+<h3>المظلات</h3>
+<p>مظلات مواقف السيارات والمساحات الخارجية.</p>
+</div>
+<div class="card">
+<img src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=700">
+<h3>الهناجر</h3>
+<p>هناجر ومستودعات وهياكل معدنية.</p>
+</div>
+<div class="card">
+<img src="https://images.unsplash.com/photo-1530124566582-a618bc2615dc?w=700">
+<h3>اللحام والتفصيل</h3>
+<p>أعمال لحام وتفصيل حسب الطلب.</p>
+</div>
+</div>
+</section>
+
+<section id="gallery">
+<h2 class="heading">معرض أعمالنا</h2>
+<div class="gallery">
+<img src="https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?w=700">
+<img src="https://images.unsplash.com/photo-1511818966892-d7d671e672a2?w=700">
+<img src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=700">
+<img src="https://images.unsplash.com/photo-1530124566582-a618bc2615dc?w=700">
+</div>
+</section>
+
+<section class="contact" id="contact">
+<h2 class="heading">تواصل معنا</h2>
+<p>هل لديك مشروع؟ نحن مستعدون لتنفيذه.</p>
+<a class="btn" href="mailto:info@example.com">اطلب عرض سعر</a>
+</section>
+
+<footer>
+الإبداع والفن © 2026 - جميع الحقوق محفوظة
+</footer>
+
+</body>
+  </html>
