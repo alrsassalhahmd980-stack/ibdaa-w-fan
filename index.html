@@ -1,115 +1,91 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ar" dir="rtl">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>الإبداع والفن | أعمال الحديد</title>
-<style>
-*{box-sizing:border-box;margin:0;padding:0}
-body{font-family:Tahoma,Arial;background:#101010;color:#fff;line-height:1.8}
-header{background:#090909;padding:18px 7%;display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid #b99448}
-.logo{font-size:24px;color:#d6b568;font-weight:bold}
-nav a{color:white;text-decoration:none;margin:0 9px;font-size:14px}
-.hero{min-height:580px;background:linear-gradient(90deg,#000c,#0008),url('https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?w=1600') center/cover;display:flex;align-items:center;padding:60px 8%}
-.hero h1{font-size:46px;color:#e0bd70;margin-bottom:15px}
-.hero p{font-size:19px;color:#eee;max-width:550px}
-.btn{display:inline-block;background:#c6a052;color:#111;padding:12px 27px;margin-top:25px;text-decoration:none;border-radius:5px;font-weight:bold}
-section{padding:65px 7%}
-.heading{text-align:center;color:#d8b76d;font-size:30px;margin-bottom:35px}
-.about{text-align:center;color:#ddd;max-width:800px;margin:auto}
-.services{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px}
-.card{background:#1b1b1b;border:1px solid #554525;border-radius:9px;overflow:hidden;text-align:center;padding-bottom:20px}
-.card img{width:100%;height:190px;object-fit:cover}
-.card h3{color:#dfbd75;margin:15px}
-.card p{color:#ccc;padding:0 12px}
-.gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:15px}
-.gallery img{width:100%;height:220px;object-fit:cover;border-radius:8px}
-.contact{text-align:center;background:#191919}
-.contact p{color:#ddd}
-footer{text-align:center;background:#080808;padding:25px;color:#c5a45e}
-@media(max-width:600px){
-header{flex-direction:column;gap:10px}
-nav a{margin:0 5px;font-size:12px}
-.hero{min-height:480px}
-.hero h1{font-size:32px}
-}
-</style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="الصرح الملكي للحديد — تصميم وتنفيذ الأبواب والبوابات والمظلات والهناجر والدرابزين والأعمال المعدنية حسب الطلب.">
+  <meta name="theme-color" content="#101010">
+  <title>الصرح الملكي للحديد | قوة في البناء وإبداع في التصميم</title>
+  <style>
+    :root{--bg:#0b0b0b;--panel:#151515;--gold:#d9a52e;--gold2:#f4c65b;--text:#f7f3e9;--muted:#c4bda9}
+    *{box-sizing:border-box} html{scroll-behavior:smooth} body{margin:0;background:var(--bg);color:var(--text);font-family:Tahoma,Arial,sans-serif;line-height:1.8}
+    a{color:inherit;text-decoration:none}.wrap{width:min(1160px,92%);margin:auto}
+    .top{background:#050505;border-bottom:1px solid #70551b;color:var(--muted);font-size:13px;padding:8px 0}
+    .top .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+    header{position:sticky;top:0;z-index:10;background:#101010ed;border-bottom:1px solid #5d481e;backdrop-filter:blur(10px)}
+    .nav{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:14px 0}
+    .brand{display:flex;align-items:center;gap:12px;font-weight:bold}.mark{width:48px;height:48px;border:2px solid var(--gold);border-radius:50%;display:grid;place-items:center;color:var(--gold);font-size:24px}
+    .brand strong{display:block;color:var(--gold2);font-size:19px}.brand small{display:block;direction:ltr;text-align:right;color:#ddd;font-size:10px;letter-spacing:2px}
+    .links{display:flex;gap:20px;align-items:center;font-size:14px}.links a:hover{color:var(--gold2)}
+    .btn{display:inline-block;background:linear-gradient(135deg,var(--gold2),var(--gold));color:#17120a;padding:11px 20px;border-radius:30px;font-weight:bold;border:0}
+    .menu{display:none;background:none;border:1px solid #806323;color:var(--gold2);padding:8px 12px;border-radius:8px;font-size:20px}
+    .hero{min-height:540px;display:grid;align-items:center;background:linear-gradient(90deg,#070707e8,#0707078a),url('https://images.unsplash.com/photo-1605100804763-247f67b3557e?auto=format&fit=crop&w=1800&q=85') center/cover}
+    .hero-content{max-width:650px;padding:90px 0}.eyebrow{color:var(--gold2);font-weight:bold;letter-spacing:1px}
+    h1{font-size:clamp(34px,5vw,62px);line-height:1.25;margin:12px 0;color:#fff}.hero p{font-size:18px;color:#eee;max-width:570px}
+    .hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}.outline{border:1px solid var(--gold);padding:10px 20px;border-radius:30px}
+    section{padding:75px 0}.section-head{text-align:center;margin:0 auto 35px;max-width:720px}.section-head h2{font-size:32px;margin:0 0 8px;color:var(--gold2)}.section-head p{color:var(--muted);margin:0}
+    .features{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:-30px;position:relative}
+    .feature{background:#171717;border:1px solid #58451d;border-radius:14px;text-align:center;padding:18px 12px}.feature b{display:block;color:var(--gold2)}
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{background:var(--panel);border:1px solid #393024;border-radius:15px;overflow:hidden}.card img{width:100%;height:220px;object-fit:cover;display:block}.card .body{padding:18px}.card h3{margin:0 0 5px;color:var(--gold2)}.card p{color:var(--muted);margin:0}
+    .about{display:grid;grid-template-columns:1fr 1fr;gap:35px;align-items:center}.about img{width:100%;height:360px;object-fit:cover;border-radius:18px;border:1px solid #6a5120}.about h2{color:var(--gold2);font-size:32px}.about p{color:var(--muted)}
+    .cta{background:linear-gradient(120deg,#20190c,#111);border-block:1px solid #76591d;text-align:center}.cta h2{font-size:30px;color:var(--gold2);margin-top:0}
+    .gallery .card img{height:250px}.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}.contact-box{background:var(--panel);border:1px solid #40331c;border-radius:15px;padding:24px}.contact-box h3{color:var(--gold2);margin-top:0}.contact-box p{color:var(--muted)}
+    footer{background:#050505;border-top:1px solid #70551b;padding:28px 0;color:var(--muted);text-align:center;font-size:13px}
+    @media(max-width:850px){.links{display:none;position:absolute;top:76px;right:4%;left:4%;background:#151515;border:1px solid #5d481e;border-radius:12px;padding:18px;flex-direction:column;align-items:stretch}.links.show{display:flex}.menu{display:block}.nav>.btn{display:none}.grid{grid-template-columns:repeat(2,1fr)}.features{grid-template-columns:repeat(2,1fr)}}
+    @media(max-width:600px){.hero{min-height:490px}.hero-content{padding:65px 0}.hero p{font-size:16px}section{padding:55px 0}.grid,.about,.contact-grid{grid-template-columns:1fr}.card img{height:210px}.about img{height:260px}.section-head h2{font-size:27px}.top .wrap{justify-content:center}}
+  </style>
 </head>
 <body>
-
-<header>
-<div class="logo">الإبداع والفن</div>
-<nav>
-<a href="#home">الرئيسية</a>
-<a href="#about">من نحن</a>
-<a href="#services">خدماتنا</a>
-<a href="#gallery">أعمالنا</a>
-<a href="#contact">اتصل بنا</a>
-</nav>
-</header>
-
-<div class="hero" id="home">
-<div>
-<h1>الإبداع والفن</h1>
-<p>نحو مستقبل من القوة والجمال والإتقان في عالم الحديد والإنشاءات المعدنية.</p>
-<a href="#services" class="btn">اكتشف خدماتنا</a>
-</div>
-</div>
-
-<section id="about">
-<h2 class="heading">من نحن</h2>
-<div class="about">
-نقدم حلولاً متكاملة في أعمال الحديد والمظلات والهناجر
-والإنشاءات المعدنية، مع الاهتمام بالجودة والتصميم
-والدقة في التنفيذ.
-</div>
-</section>
-
-<section id="services">
-<h2 class="heading">خدماتنا</h2>
-<div class="services">
-<div class="card">
-<img src="https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?w=700">
-<h3>أعمال الحديد</h3>
-<p>تصنيع وتنفيذ مختلف الأعمال الحديدية.</p>
-</div>
-<div class="card">
-<img src="https://images.unsplash.com/photo-1511818966892-d7d671e672a2?w=700">
-<h3>المظلات</h3>
-<p>مظلات مواقف السيارات والمساحات الخارجية.</p>
-</div>
-<div class="card">
-<img src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=700">
-<h3>الهناجر</h3>
-<p>هناجر ومستودعات وهياكل معدنية.</p>
-</div>
-<div class="card">
-<img src="https://images.unsplash.com/photo-1530124566582-a618bc2615dc?w=700">
-<h3>اللحام والتفصيل</h3>
-<p>أعمال لحام وتفصيل حسب الطلب.</p>
-</div>
-</div>
-</section>
-
-<section id="gallery">
-<h2 class="heading">معرض أعمالنا</h2>
-<div class="gallery">
-<img src="https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?w=700">
-<img src="https://images.unsplash.com/photo-1511818966892-d7d671e672a2?w=700">
-<img src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=700">
-<img src="https://images.unsplash.com/photo-1530124566582-a618bc2615dc?w=700">
-</div>
-</section>
-
-<section class="contact" id="contact">
-<h2 class="heading">تواصل معنا</h2>
-<p>هل لديك مشروع؟ نحن مستعدون لتنفيذه.</p>
-<a class="btn" href="mailto:info@example.com">اطلب عرض سعر</a>
-</section>
-
-<footer>
-الإبداع والفن © 2026 - جميع الحقوق محفوظة
-</footer>
-
+  <div class="top"><div class="wrap"><span>📞 أضف رقم الهاتف هنا</span><span>✉️ أضف البريد الإلكتروني هنا</span><span>📍 أضف المدينة والعنوان هنا</span></div></div>
+  <header><div class="wrap nav">
+    <a class="brand" href="#home"><span class="mark">♛</span><span><strong>الصرح الملكي للحديد</strong><small>ROYAL EDIFICE STEEL</small></span></a>
+    <button class="menu" aria-label="فتح القائمة" onclick="document.querySelector('.links').classList.toggle('show')">☰</button>
+    <nav class="links"><a href="#home">الرئيسية</a><a href="#about">من نحن</a><a href="#services">خدماتنا</a><a href="#gallery">معرض الأعمال</a><a href="#contact">اتصل بنا</a></nav>
+    <a class="btn" href="#contact">اطلب عرض سعر</a>
+  </div></header>
+  <main>
+    <section class="hero" id="home"><div class="wrap"><div class="hero-content">
+      <div class="eyebrow">جودة تليق باختيارك</div>
+      <h1>قوة في البناء،<br>وإبداع في التصميم</h1>
+      <p>ننفّذ أعمال الحديد باحترافية وعناية بالتفاصيل، من الأبواب والبوابات إلى المظلات والهناجر والهياكل المعدنية.</p>
+      <div class="hero-actions"><a class="btn" href="#gallery">شاهد أعمالنا</a><a class="outline" href="#contact">تواصل معنا</a></div>
+    </div></div></section>
+    <div class="wrap features">
+      <div class="feature">✦<b>جودة في التنفيذ</b><small>اهتمام بكل التفاصيل</small></div>
+      <div class="feature">⚙<b>تصاميم حسب الطلب</b><small>حلول تناسب احتياجك</small></div>
+      <div class="feature">✓<b>التزام بالمواعيد</b><small>تنظيم ومتابعة للعمل</small></div>
+      <div class="feature">♜<b>خدمة ومتابعة</b><small>من الفكرة حتى التسليم</small></div>
+    </div>
+    <section id="about"><div class="wrap about">
+      <img src="https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&w=1000&q=85" alt="أعمال تشكيل المعادن والحديد">
+      <div><div class="eyebrow">من نحن</div><h2>الصرح الملكي للحديد</h2><p>نقدّم حلولًا متكاملة في أعمال الحديد والتصنيع المعدني، مع الحرص على الجمع بين المتانة والمظهر الأنيق. نعمل على تنفيذ المشاريع وفق احتياجات العميل والتصميم المتفق عليه.</p><p>أضف هنا نبذة حقيقية عن خبرة المؤسسة وموقعها وطبيعة خدماتها.</p><a class="btn" href="#contact">تواصل معنا</a></div>
+    </div></section>
+    <section id="services"><div class="wrap"><div class="section-head"><h2>خدماتنا</h2><p>مجموعة من أعمال الحديد والتصاميم المعدنية للمنازل والمنشآت والمشاريع.</p></div>
+      <div class="grid">
+        <article class="card"><img src="https://images.unsplash.com/photo-1605100804763-247f67b3557e?auto=format&fit=crop&w=900&q=80" alt="أبواب وبوابات حديد"><div class="body"><h3>الأبواب والبوابات</h3><p>أبواب وبوابات حديد بتصاميم عملية وجذابة.</p></div></article>
+        <article class="card"><img src="https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&w=900&q=80" alt="هياكل معدنية"><div class="body"><h3>الهناجر والهياكل</h3><p>هياكل معدنية وحلول للمستودعات والمنشآت.</p></div></article>
+        <article class="card"><img src="https://images.unsplash.com/photo-1511818966892-d7d671e672a2?auto=format&fit=crop&w=900&q=80" alt="مظلات ومواقف"><div class="body"><h3>المظلات ومواقف السيارات</h3><p>مظلات بتصاميم متنوعة للمنازل والمرافق.</p></div></article>
+        <article class="card"><img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=900&q=80" alt="درابزين وسلالم"><div class="body"><h3>الدرابزين والسلالم</h3><p>درابزين وحواجز وسلالم بتشطيبات أنيقة.</p></div></article>
+        <article class="card"><img src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=900&q=80" alt="أعمال تفصيل"><div class="body"><h3>أعمال حسب الطلب</h3><p>تنفيذ أفكار ومقاسات خاصة حسب طلب العميل.</p></div></article>
+        <article class="card"><img src="https://images.unsplash.com/photo-1487958449943-2429e8be8625?auto=format&fit=crop&w=900&q=80" alt="مشاريع معدنية"><div class="body"><h3>مشاريع ومقاولات معدنية</h3><p>تنفيذ الأعمال المعدنية للمشاريع والمنشآت.</p></div></article>
+      </div>
+    </div></section>
+    <section class="gallery" id="gallery"><div class="wrap"><div class="section-head"><h2>معرض أعمالنا</h2><p>استبدل الصور التالية بصور مشاريعك الحقيقية لعرض جودة أعمالك.</p></div>
+      <div class="grid">
+        <div class="card"><img src="https://images.unsplash.com/photo-1605100804763-247f67b3557e?auto=format&fit=crop&w=900&q=80" alt="مشروع بوابة"></div>
+        <div class="card"><img src="https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&w=900&q=80" alt="مشروع حديد"></div>
+        <div class="card"><img src="https://images.unsplash.com/photo-1511818966892-d7d671e672a2?auto=format&fit=crop&w=900&q=80" alt="مشروع مظلة"></div>
+      </div>
+    </div></section>
+    <section class="cta"><div class="wrap"><h2>هل لديك مشروع تريد تنفيذه؟</h2><p>تواصل معنا وشاركنا فكرتك للحصول على استشارة وعرض سعر.</p><a class="btn" href="#contact">اطلب عرض سعر الآن</a></div></section>
+    <section id="contact"><div class="wrap"><div class="section-head"><h2>تواصل معنا</h2><p>أضف بيانات التواصل الصحيحة حتى يستطيع العملاء الوصول إليك.</p></div>
+      <div class="contact-grid">
+        <div class="contact-box"><h3>بيانات التواصل</h3><p>📞 الهاتف: أضف رقمك هنا</p><p>💬 واتساب: أضف رقم واتساب هنا</p><p>✉️ البريد: أضف بريدك هنا</p><p>📍 الموقع: أضف المدينة والعنوان هنا</p></div>
+        <div class="contact-box"><h3>ساعات العمل</h3><p>أضف أيام وساعات العمل هنا.</p><p>يمكنك إضافة روابط حساباتك على وسائل التواصل الاجتماعي هنا.</p><a class="btn" href="https://wa.me/" target="_blank" rel="noopener">أضف رابط واتساب الصحيح</a></div>
+      </div>
+    </div></section>
+  </main>
+  <footer><div class="wrap">© <span id="year"></span> الصرح الملكي للحديد — جميع الحقوق محفوظة.</div></footer>
+  <script>document.getElementById('year').textContent=new Date().getFullYear();document.querySelectorAll('.links a').forEach(a=>a.addEventListener('click',()=>document.querySelector('.links').classList.remove('show')));</script>
 </body>
-  </html>
+</html>
